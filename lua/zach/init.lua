@@ -1,0 +1,11 @@
+require("zach.remap")
+require("zach.set")
+require("zach.packer")
+require("zach.catppuccin")
+require("zach.treesitter")
+require("zach.undotree")
+require("zach.fugitive")
+require("zach.lspzero")
+require("zach.mason")
+require("zach.cmp")
+
