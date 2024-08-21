@@ -45,7 +45,7 @@ return {
         "windwp/nvim-ts-autotag",
         opts = {},
     },
-    {
+    { -- Easily add comments to code using Vim motions (e.g. gc2j)
         'numToStr/Comment.nvim',
         opts = {},
     },
