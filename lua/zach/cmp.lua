@@ -1,24 +1,26 @@
 local cmp = require('cmp')
+local luasnip = require('luasnip')
 
 cmp.setup({
-	sources = {
-		{name = 'nvim_lsp'},
-	},
-	mapping = cmp.mapping.preset.insert({
-		-- Navigate between completion items
-		['<C-p>'] = cmp.mapping.select_prev_item({behavior = 'select'}),
-		['<C-n>'] = cmp.mapping.select_next_item({behavior = 'select'}),
+    sources = {
+        { name = 'nvim_lsp' },
+    },
 
-		-- `Enter` key to confirm completion
-		['<CR>'] = cmp.mapping.confirm({select = false}),
+    mapping = cmp.mapping.preset.insert({
+        -- Navigate between completion items
+        ['<C-p>'] = cmp.mapping.select_prev_item({ behavior = 'select' }),
+        ['<C-n>'] = cmp.mapping.select_next_item({ behavior = 'select' }),
 
-		-- Ctrl+Space to trigger completion menu
-		['<C-Space>'] = cmp.mapping.complete(),-- Navigate between completion items
-	}),
-	snippet = {
-		expand = function(args)
-			vim.snippet.expand(args.body)
-		end,
-	},
+        -- `Enter` key to confirm completion
+        ['<CR>'] = cmp.mapping.confirm({ select = false }),
+
+        -- Ctrl+Space to trigger completion menu
+        ['<C-Space>'] = cmp.mapping.complete(), -- Navigate between completion items
+    }),
+
+    snippet = {
+        expand = function(args)
+            luasnip.lsp_expand(args.body)
+        end,
+    },
 })
-
