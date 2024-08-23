@@ -89,4 +89,14 @@ return {
             map_c_w = false, -- map <c-w> to delete a pair if possible
         },
     },
+    {
+        'numToStr/FTerm.nvim',
+        opts = {
+            border = 'single',
+            dimensions = {
+                height = 1,
+                width = 1,
+            },
+        },
+    },
 }
