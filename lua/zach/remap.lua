@@ -48,3 +48,5 @@ vim.keymap.set("n", "<leader>qw", ":wqall<CR>")
 -- Window
 vim.keymap.set("n", "\\w", "<C-W>")
 
+-- Search
+vim.keymap.set("n", "<leader>/", ":nohlsearch<CR>");
