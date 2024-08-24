@@ -33,8 +33,8 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- Terminal
-vim.keymap.set("n", "<leader>/t", '<CMD>lua require("FTerm").toggle()<CR>')
-vim.keymap.set("t", "<leader>/t", '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
+vim.keymap.set("n", "\\t", '<CMD>lua require("FTerm").toggle()<CR>')
+vim.keymap.set("t", "\\t", '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 
 -- Buffer
 vim.keymap.set("n", "<leader>bb", ":ls<cr>:b<space>")
