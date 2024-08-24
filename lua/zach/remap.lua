@@ -37,7 +37,7 @@ vim.keymap.set("n", "<leader>t", '<CMD>lua require("FTerm").toggle()<CR>')
 vim.keymap.set("t", "<leader>t", '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 
 -- Buffer
-vim.keymap.set("n", "<leader>b", ":ls<cr>:b<space>")
+vim.keymap.set("n", "<leader>bb", ":ls<cr>:b<space>")
 vim.keymap.set("n", "<leader>bn", ":bnext<CR>")
 vim.keymap.set("n", "<leader>bp", ":bprevious<CR>")
 
