@@ -46,5 +46,5 @@ vim.keymap.set("n", "<leader>qq", ":qall<CR>")
 vim.keymap.set("n", "<leader>qw", ":wqall<CR>")
 
 -- Window
-vim.keymap.set("n", "<leader>w", "<C-W>")
+vim.keymap.set("n", "\\w", "<C-W>")
 
