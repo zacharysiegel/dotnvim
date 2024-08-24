@@ -42,7 +42,7 @@ vim.keymap.set("n", "<leader>bn", ":bnext<CR>")
 vim.keymap.set("n", "<leader>bp", ":bprevious<CR>")
 
 -- Quit
-vim.keymap.set("n", "<leader>q", ":qall<CR>")
+vim.keymap.set("n", "<leader>qq", ":qall<CR>")
 vim.keymap.set("n", "<leader>qw", ":wqall<CR>")
 
 -- Window
