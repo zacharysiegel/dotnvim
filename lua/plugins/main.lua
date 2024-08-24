@@ -13,9 +13,6 @@ return {
         'mbbill/undotree'
     },
     {
-        'tpope/vim-fugitive'
-    },
-    {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v4.x',
     },
