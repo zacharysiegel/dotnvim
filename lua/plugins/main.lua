@@ -68,12 +68,16 @@ return {
                     hide_dotfiles = false,
                     hide_gitignored = false,
                     hide_hidden = false, -- only works on Windows for hidden files/directories
-                    never_show = { -- remains hidden even if visible is toggled to true, this overrides always_show
+                    never_show = {       -- remains hidden even if visible is toggled to true, this overrides always_show
                         ".DS_Store",
                         "thumbs.db",
                     },
                 },
-            }
+                follow_current_file = {
+                    enabled = true,
+                    leave_dirs_open = false,
+                },
+            },
         },
     },
     {
