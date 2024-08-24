@@ -32,13 +32,19 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
+-- Terminal
 vim.keymap.set("n", "<leader>t", '<CMD>lua require("FTerm").toggle()<CR>')
 vim.keymap.set("t", "<leader>t", '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 
+-- Buffer
 vim.keymap.set("n", "<leader>b", ":ls<cr>:b<space>")
 vim.keymap.set("n", "<leader>bn", ":bnext<CR>")
 vim.keymap.set("n", "<leader>bp", ":bprevious<CR>")
 
+-- Quit
 vim.keymap.set("n", "<leader>q", ":qall<CR>")
-vim.keymap.set("n", "<leader>wq", ":wqall<CR>")
+vim.keymap.set("n", "<leader>qw", ":wqall<CR>")
+
+-- Window
+vim.keymap.set("n", "<leader>w", "C-W")
 
