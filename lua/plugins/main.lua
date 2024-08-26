@@ -113,4 +113,45 @@ return {
             },
         },
     },
+    {
+        'mfussenegger/nvim-dap',
+        opts = {},
+        keys = {
+            {
+                "<leader>du",
+                function()
+                    require("dapui").toggle()
+                end,
+                silent = true,
+            },
+        },
+        config = function(_, opts)
+            require("dapui").setup(opts)
+        end,
+    },
+    {
+        "rcarriga/nvim-dap-ui",
+        dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
+        opts = {
+            types = true,
+        },
+    },
+    {
+        "folke/lazydev.nvim",
+        ft = "lua", -- only load on lua files
+        opts = {
+            library = {
+                -- Load luvit types when the `vim.uv` word is found
+                { path = "luvit-meta/library", words = { "vim%.uv" } },
+            },
+        },
+    },
+    {
+        "Bilal2453/luvit-meta",
+        lazy = true,
+    },
+    {
+        'theHamsta/nvim-dap-virtual-text',
+        opts = {},
+    },
 }
