@@ -6,4 +6,5 @@ require("zach.undotree")
 require("zach.lspzero")
 require("zach.mason")
 require("zach.cmp")
+require("zach.todo-comments")
 

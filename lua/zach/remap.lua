@@ -50,3 +50,4 @@ vim.keymap.set("n", "<leader>w", "<C-W>")
 
 -- Search
 vim.keymap.set("n", "<leader>/", ":nohlsearch<CR>");
+
