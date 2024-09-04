@@ -23,6 +23,9 @@ return {
         'hrsh7th/nvim-cmp'
     },
     {
+        'neovim/nvim-lspconfig',
+    },
+    {
         "williamboman/mason.nvim"
     },
     {
