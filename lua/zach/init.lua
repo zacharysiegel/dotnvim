@@ -7,4 +7,4 @@ require("zach.lspzero")
 require("zach.mason")
 require("zach.cmp")
 require("zach.todo-comments")
-
+require("zach.wrap")
