@@ -157,4 +157,7 @@ return {
     {
         "sindrets/diffview.nvim",
     },
+    {
+        "rust-lang/rust.vim"
+    }
 }
