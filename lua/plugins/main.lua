@@ -26,12 +26,12 @@ return {
         'neovim/nvim-lspconfig',
     },
     {
-        "williamboman/mason.nvim"
+        "williamboman/mason.nvim",
     },
     {
-        "williamboman/mason-lspconfig.nvim"
+        "williamboman/mason-lspconfig.nvim",
     },
-    {
+    { -- todo: remove
         'ThePrimeagen/vim-be-good'
     },
     {
