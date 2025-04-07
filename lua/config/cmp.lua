@@ -4,6 +4,7 @@ local luasnip = require('luasnip')
 cmp.setup({
     sources = {
         { name = 'nvim_lsp' },
+        { name = 'crates' },
     },
 
     mapping = cmp.mapping.preset.insert({

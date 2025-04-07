@@ -8,3 +8,6 @@ require("config.mason")
 require("config.cmp")
 require("config.todo-comments")
 require("config.wrap")
+require("config.dap")
+require("config.crates")
+
