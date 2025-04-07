@@ -13,3 +13,6 @@ lsp_zero.extend_lspconfig({
   capabilities = require('cmp_nvim_lsp').default_capabilities(),
 })
 
+-- This should be set in the default keymaps, but it wasn't working.
+vim.keymap.set("n", "gr", vim.lsp.buf.references)
+
