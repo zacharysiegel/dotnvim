@@ -31,9 +31,6 @@ return {
     {
         "williamboman/mason-lspconfig.nvim",
     },
-    { -- todo: remove
-        'ThePrimeagen/vim-be-good'
-    },
     {
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end,
