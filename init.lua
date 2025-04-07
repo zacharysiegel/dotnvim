@@ -1,2 +1,2 @@
-require("zach")
+require("config")
 require("lazy").setup("plugins")
