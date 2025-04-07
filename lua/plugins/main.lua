@@ -190,5 +190,9 @@ return {
         "ellisonleao/glow.nvim",
         config = true,
         cmd = "Glow",
-    }
+    },
+    {
+        "felipec/vim-sanegx",
+        event = "BufRead",
+    },
 }
