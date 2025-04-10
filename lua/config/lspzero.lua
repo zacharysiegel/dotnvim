@@ -16,3 +16,16 @@ lsp_zero.extend_lspconfig({
 -- This should be set in the default keymaps, but it wasn't working.
 vim.keymap.set("n", "gr", vim.lsp.buf.references)
 
+-- Default keymaps: (https://lsp-zero.netlify.app/docs/language-server-configuration.html)
+-- 
+-- K: Displays hover information about the symbol under the cursor in a floating window. See :help vim.lsp.buf.hover().
+-- gd: Jumps to the definition of the symbol under the cursor. See :help vim.lsp.buf.definition().
+-- gD: Jumps to the declaration of the symbol under the cursor. Some servers don't implement this feature. See :help vim.lsp.buf.declaration().
+-- gi: Lists all the implementations for the symbol under the cursor in the quickfix window. See :help vim.lsp.buf.implementation().
+-- go: Jumps to the definition of the type of the symbol under the cursor. See :help vim.lsp.buf.type_definition().
+-- gr: Lists all the references to the symbol under the cursor in the quickfix window. See :help vim.lsp.buf.references().
+-- gs: Displays signature information about the symbol under the cursor in a floating window. See :help vim.lsp.buf.signature_help(). If a mapping already exists for this key this function is not bound.
+-- <F2>: Renames all references to the symbol under the cursor. See :help vim.lsp.buf.rename().
+-- <F3>: Format code in current buffer. See :help vim.lsp.buf.format().
+-- <F4>: Selects a code action available at the current cursor position. See :help vim.lsp.buf.code_action().
+
