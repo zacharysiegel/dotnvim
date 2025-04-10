@@ -37,3 +37,5 @@ end, { desc = 'Toggle diagnostic virtual_lines' })
 -- <F3>: Format code in current buffer. See :help vim.lsp.buf.format().
 -- <F4>: Selects a code action available at the current cursor position. See :help vim.lsp.buf.code_action().
 
+-- See also: https://neovim.io/doc/user/lsp.html
+
