@@ -16,6 +16,14 @@ lsp_zero.extend_lspconfig({
 -- This should be set in the default keymaps, but it wasn't working.
 vim.keymap.set("n", "gr", vim.lsp.buf.references)
 
+vim.keymap.set('n', 'gk', function ()
+    vim.diagnostic.open_float()
+end, { desc = 'Open diagnostic floating window'})
+vim.keymap.set('n', 'gK', function()
+  local new_config = not vim.diagnostic.config().virtual_lines
+  vim.diagnostic.config({ virtual_lines = new_config })
+end, { desc = 'Toggle diagnostic virtual_lines' })
+
 -- Default keymaps: (https://lsp-zero.netlify.app/docs/language-server-configuration.html)
 -- 
 -- K: Displays hover information about the symbol under the cursor in a floating window. See :help vim.lsp.buf.hover().
