@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>pv", ":Neotree reveal toggle focus position=left source=filesystem<cr>")
-vim.keymap.set("n", "<leader>pV", ":Neotree reveal toggle focus position=left source=buffers<cr>")
+vim.keymap.set("n", "<leader>pv", ":Neotree reveal toggle=false focus position=left source=filesystem<cr>")
+vim.keymap.set("n", "<leader>pV", ":Neotree reveal toggle=false focus position=left source=buffers<cr>")
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
