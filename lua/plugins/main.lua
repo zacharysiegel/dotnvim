@@ -51,6 +51,10 @@ return {
         },
     },
     {
+        "nvim-tree/nvim-web-devicons",
+        opts = {},
+    },
+    {
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v3.x",
         dependencies = {

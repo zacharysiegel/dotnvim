@@ -10,4 +10,5 @@ require("config.todo-comments")
 require("config.wrap")
 require("config.dap")
 require("config.crates")
+require("config.nvim-web-devicons")
 
