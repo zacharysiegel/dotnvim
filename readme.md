@@ -1,7 +1,9 @@
-# dotnvim
+**This repo is supposed to be used as config by NvChad users!**
 
-## Setup
+- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
+- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
+- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
 
-1. Clone this repository to `~/.config/nvim`.
-2. Execute `./link_ideavimrc.sh` to initialize IntelliJ Vim plugin configuration.
+# Credits
 
+1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
