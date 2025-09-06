@@ -50,6 +50,5 @@ require "autocmds"
 
 vim.schedule(function()
   require "mappings"
-
   require "zach"
 end)

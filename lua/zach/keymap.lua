@@ -1,3 +1,5 @@
+local M = {}
+
 vim.g.mapleader = " "
 
 vim.keymap.set("n", "<leader>pv", ":NvimTreeFocus<CR>")
@@ -34,7 +36,6 @@ vim.keymap.set("n", "<leader>qw", ":wqall<CR>")
 
 -- Window
 vim.keymap.set("n", "<leader>w", "<C-W>")
-vim.keymap.del("n", "<leader>wk") -- Needed to override NVChad default (which-key)
 
 -- Editor
 vim.keymap.set("n", "<leader>/", ":nohlsearch<CR>")
@@ -49,4 +50,15 @@ vim.keymap.set("n", "<leader>dO", "<cmd>DapStepOut<CR>", { desc = "Step Out" })
 vim.keymap.set("n", "<leader>dr", "<cmd>DapRestart<CR>", { desc = "Restart" })
 vim.keymap.set("n", "<leader>dt", "<cmd>DapTerminate<CR>", { desc = "Terminate" })
 vim.keymap.set("n", "<leader>du", function() require("dapui").toggle() end, { desc = "Toggle DAP UI" })
+
+-- NVChad adjustments
+vim.keymap.del("n", "<leader>h")
+vim.keymap.del("n", "<leader>v")
+vim.keymap.del("n", "<leader>wk") -- (which-key)
+
+M.dynamic = (function(opts) 
+	pcall(vim.keymap.del, "n", "<leader>wl", opts)
+end)
+
+return M
 
