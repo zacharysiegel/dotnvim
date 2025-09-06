@@ -52,6 +52,7 @@ vim.keymap.set("n", "<leader>dt", "<cmd>DapTerminate<CR>", { desc = "Terminate" 
 vim.keymap.set("n", "<leader>du", function() require("dapui").toggle() end, { desc = "Toggle DAP UI" })
 
 -- NVChad adjustments
+vim.keymap.del("n", "<C-N>")
 vim.keymap.del("n", "<leader>h")
 vim.keymap.del("n", "<leader>v")
 vim.keymap.del("n", "<leader>wk") -- (which-key)
