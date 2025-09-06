@@ -33,6 +33,7 @@ require("nvim-tree").setup {
   view = {
     width = 30,
   },
+	git = { enable = false, },
   renderer = {
     group_empty = true,
   },
