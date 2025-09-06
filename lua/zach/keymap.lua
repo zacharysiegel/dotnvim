@@ -20,6 +20,9 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
+-- Language Server
+vim.keymap.set("n", "<leader>re", vim.lsp.buf.rename)
+
 -- Buffer
 vim.keymap.set("n", "<leader>bb", ":ls<cr>:b<space>")
 vim.keymap.set("n", "<leader>bn", ":bnext<CR>")
@@ -31,7 +34,7 @@ vim.keymap.set("n", "<leader>qw", ":wqall<CR>")
 
 -- Window
 vim.keymap.set("n", "<leader>w", "<C-W>")
-vim.keymap.set("n", "<leader>wk", "<C-W>k") -- Needed to override NVChad default (which-key)
+vim.keymap.del("n", "<leader>wk") -- Needed to override NVChad default (which-key)
 
 -- Search
 vim.keymap.set("n", "<leader>/", ":nohlsearch<CR>");
