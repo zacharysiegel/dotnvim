@@ -36,8 +36,9 @@ vim.keymap.set("n", "<leader>qw", ":wqall<CR>")
 vim.keymap.set("n", "<leader>w", "<C-W>")
 vim.keymap.del("n", "<leader>wk") -- Needed to override NVChad default (which-key)
 
--- Search
-vim.keymap.set("n", "<leader>/", ":nohlsearch<CR>");
+-- Editor
+vim.keymap.set("n", "<leader>/", ":nohlsearch<CR>")
+vim.keymap.set("n", "<leader>wr", ":set wrap!<CR>")
 
 -- Debugger
 vim.keymap.set("n", "<leader>db", "<cmd>DapToggleBreakpoint<CR>", { desc = "Toggle Breakpoint" })
