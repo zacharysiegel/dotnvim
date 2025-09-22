@@ -51,6 +51,10 @@ vim.keymap.set("n", "<leader>dr", "<cmd>DapRestart<CR>", { desc = "Restart" })
 vim.keymap.set("n", "<leader>dt", "<cmd>DapTerminate<CR>", { desc = "Terminate" })
 vim.keymap.set("n", "<leader>du", function() require("dapui").toggle() end, { desc = "Toggle DAP UI" })
 
+-- Telescope
+vim.keymap.set("n", "<leader>fg", "<Cmd>Telescope git_status<CR>")
+vim.keymap.del("n", "<leader>gt") -- remapped to "<leader>fg"
+
 -- NVChad adjustments
 vim.keymap.del("n", "<C-N>")
 vim.keymap.del("n", "<leader>h")
