@@ -54,6 +54,8 @@ vim.keymap.set("n", "<leader>du", function() require("dapui").toggle() end, { de
 -- Telescope
 vim.keymap.set("n", "<leader>fg", "<Cmd>Telescope git_status<CR>")
 vim.keymap.del("n", "<leader>gt") -- remapped to "<leader>fg"
+vim.keymap.set("n", "<leader>fc", "<Cmd>Telescope git_commits<CR>")
+vim.keymap.del("n", "<leader>fc") -- remapped to "<leader>fc"
 
 -- NVChad adjustments
 vim.keymap.del("n", "<C-N>")
