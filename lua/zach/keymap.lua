@@ -52,10 +52,20 @@ vim.keymap.set("n", "<leader>dt", "<cmd>DapTerminate<CR>", { desc = "Terminate" 
 vim.keymap.set("n", "<leader>du", function() require("dapui").toggle() end, { desc = "Toggle DAP UI" })
 
 -- Telescope
+vim.keymap.set("n", "<leader>fp", "<Cmd>Telescope builtin<CR>")
 vim.keymap.set("n", "<leader>fg", "<Cmd>Telescope git_status<CR>")
 vim.keymap.del("n", "<leader>gt") -- remapped to "<leader>fg"
 vim.keymap.set("n", "<leader>fc", "<Cmd>Telescope git_commits<CR>")
 vim.keymap.del("n", "<leader>fc") -- remapped to "<leader>fc"
+vim.keymap.set("n", "<leader>lr", "<Cmd>Telescope lsp_references<CR>")
+vim.keymap.set("n", "<leader>lci", "<Cmd>Telescope lsp_incoming_calls<CR>")
+vim.keymap.set("n", "<leader>lco", "<Cmd>Telescope lsp_outgoing_calls<CR>")
+vim.keymap.set("n", "<leader>ls", "<Cmd>Telescope lsp_document_symbols<CR>")
+vim.keymap.set("n", "<leader>lws", "<Cmd>Telescope lsp_dynamic_workspace_symbols<CR>")
+vim.keymap.set("n", "<leader>lx", "<Cmd>Telescope lsp_diagnostics<CR>")
+vim.keymap.set("n", "<leader>li", "<Cmd>Telescope lsp_implementations<CR>")
+vim.keymap.set("n", "<leader>ld", "<Cmd>Telescope lsp_definitions<CR>")
+vim.keymap.set("n", "<leader>lt", "<Cmd>Telescope lsp_type_definitions<CR>")
 
 -- NVChad adjustments
 vim.keymap.del("n", "<C-N>")

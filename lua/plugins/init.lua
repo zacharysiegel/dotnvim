@@ -16,13 +16,16 @@ return {
   { import = "nvchad.blink.lazyspec" },
 
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
-  			"vim", "lua", "vimdoc",
-       "html", "css"
-  		},
-  	},
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "vim",
+        "lua",
+        "vimdoc",
+        "html",
+        "css",
+      },
+    },
   },
 
   {
@@ -36,9 +39,9 @@ return {
     },
   },
 
-  { 
+  {
     "nvim-tree/nvim-web-devicons",
-    opts = {}
+    opts = {},
   },
 
   {
@@ -67,8 +70,8 @@ return {
       "nvim-neotest/nvim-nio",
     },
     config = function()
-      local dap = require("dap")
-      local dapui = require("dapui")
+      local dap = require "dap"
+      local dapui = require "dapui"
       dapui.setup()
       dap.listeners.after.event_initialized["dapui_config"] = function()
         dapui.open()
@@ -79,7 +82,16 @@ return {
       dap.listeners.before.event_exited["dapui_config"] = function()
         dapui.close()
       end
-    end
+    end,
+  },
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = {
+      pickers = {
+        find_files = {
+          hidden = true,
+        },
+      },
+    },
   },
 }
-
