@@ -88,6 +88,15 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     opts = {
+      defaults = {
+        layout_strategy = "vertical",
+        layout_config = {
+          vertical = {
+            width = 0.95,
+            height = 0.95,
+          },
+        },
+      },
       pickers = {
         find_files = {
           hidden = true,
