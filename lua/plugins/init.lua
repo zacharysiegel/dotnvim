@@ -35,6 +35,7 @@ return {
         "clangd",
         "clang-format",
         "codelldb",
+        "checkmake",
       },
     },
   },
@@ -90,6 +91,12 @@ return {
       pickers = {
         find_files = {
           hidden = true,
+          file_ignore_patterns = {
+            ".git/.*",
+            "node%_modules/.*",
+            ".*.dSYM/.*",
+            ".cache/.*",
+          },
         },
       },
     },
