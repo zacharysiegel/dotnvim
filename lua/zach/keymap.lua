@@ -39,7 +39,7 @@ vim.keymap.set("n", "<leader>w", "<C-W>")
 
 -- Editor
 vim.keymap.set("n", "<leader>/", ":nohlsearch<CR>")
-vim.keymap.set("n", "<leader>wr", ":set wrap!<CR>")
+vim.keymap.set("n", "<leader>rw", ":set wrap!<CR>")
 
 -- Debugger
 vim.keymap.set("n", "<leader>db", "<cmd>DapToggleBreakpoint<CR>", { desc = "Toggle Breakpoint" })
