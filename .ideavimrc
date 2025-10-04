@@ -35,6 +35,5 @@ Plug 'tpope/vim-commentary'
 
 set ic
 
-set relativenumber
+"set relativenumber
 set number 
-
